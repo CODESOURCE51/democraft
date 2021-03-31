@@ -1,0 +1,11 @@
+enableVersioning: true
+handle: homeSlider
+name: 'Home Slider'
+propagationMethod: all
+siteSettings:
+  950c6040-e386-4f1f-b60a-fec96f0dc055: # democraft
+    enabledByDefault: true
+    hasUrls: true
+    template: home-slider/_entry
+    uriFormat: 'home-slider/{slug}'
+type: channel

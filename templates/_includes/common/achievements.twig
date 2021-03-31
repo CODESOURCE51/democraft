@@ -1,59 +1,25 @@
+{% set achievement = craft.entries.section('achievement').all() %}
+{% if achievement|length %}
 <section class="funfact-area ptb-85 bg-2 bg-overlay-1">
 					<div class="container">
 						<!-- Funfact Single -->
+						{% for key, achievement in achievement %}
 						<div class="funfact-single text-center">
 							<div class="funfact-img">
-								<img src="assets/common/img/funfact/1.png" alt="">
+								{% if achievement.progressIcon|length %}
+                                {% set image = achievement.progressIcon.one() %}
+								<img src="{{ image.getUrl() }}" alt="{{ image.title }}">
+								{% endif %} 
 							</div>
 							<div class="funfact-count text-uppercase">
-								<h3><span class="counter">450</span></h3>
-								<h5>Cup Of Cofffee</h5>
+								<h3><span class="counter">{{ achievement.progressNumber }}</span></h3>
+								<h5>{{ achievement.progressName }}</h5>
 							</div>
 						</div>
+						{% endfor %}
 						<!-- Funfact Single -->
-						<!-- Funfact Single -->
-						<div class="funfact-single text-center">
-							<div class="funfact-img">
-								<img src="assets/common/img/funfact/2.png" alt="">
-							</div>
-							<div class="funfact-count text-uppercase">
-								<h3><span class="counter">250</span></h3>
-								<h5>Project Done</h5>
-							</div>
-						</div>
-						<!-- Funfact Single -->
-						<!-- Funfact Single -->
-						<div class="funfact-single text-center">
-							<div class="funfact-img">
-								<img src="assets/common/img/funfact/3.png" alt="">
-							</div>
-							<div class="funfact-count text-uppercase">
-								<h3><span class="counter">200</span></h3>
-								<h5>Happy Clients</h5>
-							</div>
-						</div>
-						<!-- Funfact Single -->
-						<!-- Funfact Single -->
-						<div class="funfact-single text-center">
-							<div class="funfact-img">
-								<img src="assets/common/img/funfact/4.png" alt="">
-							</div>
-							<div class="funfact-count text-uppercase">
-								<h3><span class="counter">85</span></h3>
-								<h5>Our Branches</h5>
-							</div>
-						</div>
-						<!-- Funfact Single -->
-						<!-- Funfact Single -->
-						<div class="funfact-single text-center">
-							<div class="funfact-img">
-								<img src="assets/common/img/funfact/5.png" alt="">
-							</div>
-							<div class="funfact-count text-uppercase">
-								<h3><span class="counter">99</span></h3>
-								<h5>Awards Win</h5>
-							</div>
-						</div>
-						<!-- Funfact Single -->
+						
 					</div>
 				</section>
+				
+				{% endif %}

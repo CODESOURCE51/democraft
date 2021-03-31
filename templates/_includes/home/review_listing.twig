@@ -1,0 +1,22 @@
+<div class="col-md-8">
+								<div class="testimonial-owl owl-carousel owl-theme">
+									<!-- Testimonial Single -->
+                                    {% for services in service %}
+									<div class="testimonial-single">
+										<p>{{services.serviceContent}}</p>
+										<div class="testi-info text-right">
+											<h6>{{services.serviceName}}</h6>
+											
+										</div>
+										<div class="testi-img">
+											 {% if services.serviceImage|length %}
+                                            {% set image = services.serviceImage.one() %}
+												<img src="{{ image.getUrl() }}" alt="{{ image.title }}" />
+                                            {% endif %}
+										</div>
+									</div>
+                                    {% endfor %}
+									<!-- Testimonial Single -->
+									
+								</div>
+							</div>
