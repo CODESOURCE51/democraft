@@ -1,0 +1,32 @@
+contentColumnType: string
+fieldGroup: a2f21a5e-9348-4000-80b3-85455ae97511 # Trending Company Post Fields
+handle: trendingCompanyLogo
+instructions: ''
+name: 'Trending Company Logo'
+searchable: false
+settings:
+  allowSelfRelations: false
+  allowUploads: true
+  allowedKinds:
+    - image
+  defaultUploadLocationSource: 'volume:9aad392b-59b1-40f7-a134-8ff50816c216' # General
+  defaultUploadLocationSubpath: ''
+  limit: ''
+  localizeRelations: false
+  previewMode: full
+  restrictFiles: '1'
+  selectionLabel: ''
+  showSiteMenu: false
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: false
+  singleUploadLocationSource: 'volume:66d4d2c3-31e8-4504-afdb-355b7727b865' # common
+  singleUploadLocationSubpath: ''
+  source: null
+  sources: '*'
+  targetSiteId: null
+  useSingleFolder: false
+  validateRelatedElements: false
+  viewMode: list
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Assets

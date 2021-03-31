@@ -1,0 +1,47 @@
+fieldLayouts:
+  3ca3b0e8-d8b9-4c6c-8766-dcdad0723bea:
+    tabs:
+      -
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\EntryTitleField
+            warning: null
+            width: 100
+          -
+            fieldUid: 3b92844b-7790-4b2b-bf78-0cc96809ac44 # Trending Company Logo
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+handle: trendingCompany
+hasTitleField: true
+name: 'Trending Company'
+section: 5eb7d716-74db-41d1-8296-f16419d38853 # Trending Company
+sortOrder: 1
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

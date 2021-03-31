@@ -1,0 +1,18 @@
+contentColumnType: text
+fieldGroup: 5f7212a5-fb08-4cb8-b12d-9caccd57154a # Blog Post Fields
+handle: summary
+instructions: 'Blog Summery'
+name: Summary
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: ''
+  columnType: null
+  initialRows: '1'
+  multiline: '1'
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

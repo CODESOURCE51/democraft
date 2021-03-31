@@ -1,8 +1,13 @@
-dateModified: 1617113016
+dateModified: 1617169723
 email:
   fromEmail: sourav88.rp@gmail.com
   fromName: democraft
   transportType: craft\mail\transportadapters\Sendmail
+plugins:
+  redactor:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.3.0
 system:
   edition: solo
   live: true

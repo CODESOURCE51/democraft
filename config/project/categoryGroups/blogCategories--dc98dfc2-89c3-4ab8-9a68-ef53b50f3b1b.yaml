@@ -1,0 +1,40 @@
+fieldLayouts:
+  944a0383-27e0-4689-98dc-6bb3a86eedf6:
+    tabs:
+      -
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\TitleField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+handle: blogCategories
+name: 'Blog Categories'
+siteSettings:
+  950c6040-e386-4f1f-b60a-fec96f0dc055: # democraft
+    hasUrls: true
+    template: blog/_category
+    uriFormat: 'blog/category/{slug}'
+structure:
+  maxLevels: null
+  uid: 8af61caf-685c-4a60-b0f0-dbedf33f45f7

@@ -1,0 +1,11 @@
+enableVersioning: true
+handle: trendingCompany
+name: 'Trending Company'
+propagationMethod: all
+siteSettings:
+  950c6040-e386-4f1f-b60a-fec96f0dc055: # democraft
+    enabledByDefault: true
+    hasUrls: true
+    template: trending-company/_entry
+    uriFormat: 'trending-company/{slug}'
+type: channel
