@@ -9,15 +9,15 @@
 		{% block stylesheets %}
         <link rel="apple-touch-icon" href="assets/common/img/apple-touch-icon.png">
         
-        <link rel="stylesheet" href="{{ ('assets/common/css/bootstrap.min.css') }}">
-        <link rel="stylesheet" href="{{ ('assets/common/css/font-awesome.min.css') }}">
-        <link rel="stylesheet" href="{{ ('assets/common/css/icofont.css') }}">
-        <link rel="stylesheet" href="{{ ('assets/common/css/shortcode/shortcodes.css') }}">
-        <link rel="stylesheet" href="{{ ('assets/common/css/plugins.css') }}">
-        <link rel="stylesheet" href="{{ ('assets/common/style.css') }}">
-        <link rel="stylesheet" href="{{ ('assets/common/css/responsive.css') }}">
+        <link rel="stylesheet" href="{{ ('../assets/common/css/bootstrap.min.css') }}">
+        <link rel="stylesheet" href="{{ ('../assets/common/css/font-awesome.min.css') }}">
+        <link rel="stylesheet" href="{{ ('../assets/common/css/icofont.css') }}">
+        <link rel="stylesheet" href="{{ ('../assets/common/css/shortcode/shortcodes.css') }}">
+        <link rel="stylesheet" href="{{ ('../assets/common/css/plugins.css') }}">
+        <link rel="stylesheet" href="{{ ('../assets/common/style.css') }}">
+        <link rel="stylesheet" href="{{ ('../assets/common/css/responsive.css') }}">
         {% endblock %}
-        <script src="{{ ('assets/common/js/vendor/modernizr-2.8.3.min.js') }}"></script>
+        <script src="{{ ('../assets/common/js/vendor/modernizr-2.8.3.min.js') }}"></script>
     </head>
     <body>
        
@@ -28,6 +28,9 @@
 			<header>
             <!--- For Nav Menu -->
             {% include "_includes/nav" %}
+            {% block slider %}
+            {% endblock %}
+           
             <!-- Nav menu ends -->
             </header>
             <!-- Header Area End -->
@@ -38,11 +41,11 @@
 
 
 
-        <script src="{{ ('assets/common/js/vendor/jquery-1.12.4.min.js') }}"></script>
-        <script src="{{ ('assets/common/js/bootstrap.min.js') }}"></script>
-        <script src="{{ ('assets/common/js/jquery.ajaxchimp.min.js') }}"></script>
-        <script src="{{ ('assets/common/js/ajax-mail.js') }}"></script>
-        <script src="{{ ('assets/common/js/plugins.js') }}"></script>
-        <script src="{{ ('assets/common/js/main.js') }}"></script>
+        <script src="{{ ('../assets/common/js/vendor/jquery-1.12.4.min.js') }}"></script>
+        <script src="{{ ('../assets/common/js/bootstrap.min.js') }}"></script>
+        <script src="{{ ('../assets/common/js/jquery.ajaxchimp.min.js') }}"></script>
+        <script src="{{ ('../assets/common/js/ajax-mail.js') }}"></script>
+        <script src="{{ ('../assets/common/js/plugins.js') }}"></script>
+        <script src="{{ ('../assets/common/js/main.js') }}"></script>
     </body>
 </html>            
