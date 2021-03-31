@@ -1,0 +1,20 @@
+<div class="frequentialy-accordion">
+									<div aria-multiselectable="true" role="tablist" id="accordion" class="panel-group">
+										
+                                        {% for faqList in faqList %}
+                                        <div class="panel panel-default">
+											<div id="headingOne" role="tab" class="panel-heading">
+												<h4 class="panel-title">
+													<a aria-controls="collapseOne" aria-expanded="false" href="#collapseOne" data-parent="#accordion" data-toggle="collapse" role="button" class="collapsed">{{faqList.question}}</a>
+												</h4>
+											</div>
+											<div aria-labelledby="headingOne" role="tabpanel" class="panel-collapse collapse in" id="collapseOne" aria-expanded="true">
+												<div class="panel-body">
+													<p>{{faqList.answer}}</p>
+												</div>
+											</div>
+										</div>
+                                        {% endfor %}
+									
+									</div>					
+								</div>

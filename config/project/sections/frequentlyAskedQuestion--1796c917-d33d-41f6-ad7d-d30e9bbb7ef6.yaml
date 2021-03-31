@@ -1,0 +1,11 @@
+enableVersioning: true
+handle: frequentlyAskedQuestion
+name: 'Frequently Asked Question'
+propagationMethod: all
+siteSettings:
+  950c6040-e386-4f1f-b60a-fec96f0dc055: # democraft
+    enabledByDefault: true
+    hasUrls: true
+    template: frequently-asked-question/_entry
+    uriFormat: 'frequently-asked-question/{slug}'
+type: channel

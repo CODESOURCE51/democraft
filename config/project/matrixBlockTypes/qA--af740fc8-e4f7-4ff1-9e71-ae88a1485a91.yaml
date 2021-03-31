@@ -1,0 +1,77 @@
+field: e931a5d4-8efe-45b2-b58e-fb79d8903fd3 # Faq qanda
+fieldLayouts:
+  b63494e8-646b-4450-b406-ee38f0884643:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 79da0422-64ef-4565-b07a-0e16240e8298 # Question
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 7045de04-f755-42fc-b38e-c57cbe323b7e # Answer
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  79da0422-64ef-4565-b07a-0e16240e8298: # Question
+    contentColumnType: text
+    fieldGroup: null
+    handle: question
+    instructions: ''
+    name: Question
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '1'
+      multiline: '1'
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  7045de04-f755-42fc-b38e-c57cbe323b7e: # Answer
+    contentColumnType: text
+    fieldGroup: null
+    handle: answer
+    instructions: ''
+    name: Answer
+    searchable: false
+    settings:
+      availableTransforms: '*'
+      availableVolumes: '*'
+      cleanupHtml: true
+      columnType: text
+      configSelectionMode: choose
+      defaultTransform: ''
+      manualConfig: ''
+      purifierConfig: ''
+      purifyHtml: '1'
+      redactorConfig: ''
+      removeEmptyTags: '1'
+      removeInlineStyles: '1'
+      removeNbsp: '1'
+      showHtmlButtonForNonAdmins: ''
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      uiMode: enlarged
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\redactor\Field
+handle: qA
+name: 'Q&A'
+sortOrder: 1

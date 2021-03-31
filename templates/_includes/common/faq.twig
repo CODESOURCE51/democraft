@@ -1,65 +1,34 @@
+{% set faq = craft.entries.section('frequentlyAskedQuestion').all() %}
+{% if faq|length %}
+{% for entry in faq %}
 <section class="frequentialy-area ptb-85 bg-3">
 					<div class="container">
 						<div class="row">
-							<!-- Frequently Left Image -->
+							
 							<div class="col-md-3 col-md-offset-1 col-sm-12">
 								<div class="frequentialy-img mt-75">
-									<img src="assets/common/img/other/call.png" alt="" />
+									{% if entry.faqImage|length %}
+									{% set image = entry.faqImage.one() %}
+										<img src="{{ image.getUrl() }}" alt="{{ image.title }}" />
+									{% endif %}
+									
 								</div>
 							</div>
-							<!-- Frequently Left Image -->
-							<!-- Frequently Right Content -->
+							
 							<div class="col-md-8 col-sm-12">
-								<!-- Frequently Titel -->
+								
 								<div class="frequentialy-titel">
-									<h2>Frequently Ask Question</h2>
-									<p>Raees the best Architect agency perspiciatis unde omnis iste natus error sit volutatem accusantium doloremque antium, totam rem aperiam perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vita </p>
+									<h2>{{entry.faqTitle}}</h2>
+									<p>{{entry.faqSummary}}</p>
 								</div>
-								<!-- Frequently Titel -->
-								<!-- Frequently Accordion -->
-								<div class="frequentialy-accordion">
-									<div aria-multiselectable="true" role="tablist" id="accordion" class="panel-group">
-										<div class="panel panel-default">
-											<div id="headingOne" role="tab" class="panel-heading">
-												<h4 class="panel-title">
-													<a aria-controls="collapseOne" aria-expanded="false" href="#collapseOne" data-parent="#accordion" data-toggle="collapse" role="button" class="collapsed">How can we sketch landscape design for new development</a>
-												</h4>
-											</div>
-											<div aria-labelledby="headingOne" role="tabpanel" class="panel-collapse collapse in" id="collapseOne" aria-expanded="true">
-												<div class="panel-body">
-													<p>Architect agency perspiciatis unde omnis iste natus error sit volutatem accusantium doloremque antium, totam rem aperiam perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae Sed ut perspiciatis unde omnis iste natus error sit tatem.</p>
-												</div>
-											</div>
-										</div>
-										<div class="panel panel-default">
-											<div id="headingTwo" role="tab" class="panel-heading">
-												<h4 class="panel-title">
-													<a aria-controls="collapseTwo" aria-expanded="false" href="#collapseTwo" data-parent="#accordion" data-toggle="collapse" role="button" class="collapsed">What is rules for mainting Bridge design</a>
-												</h4>
-											</div>
-											<div aria-labelledby="headingTwo" role="tabpanel" class="panel-collapse collapse" id="collapseTwo" aria-expanded="false" style="height: 0px;">
-												<div class="panel-body">
-													<p>Architect agency perspiciatis unde omnis iste natus error sit volutatem accusantium doloremque antium, totam rem aperiam perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae Sed ut perspiciatis unde omnis iste natus error sit tatem.</p>
-												</div>
-											</div>
-										</div>
-										<div class="panel panel-default">
-											<div id="headingThree" role="tab" class="panel-heading">
-												<h4 class="panel-title">
-													<a aria-controls="collapseThree" aria-expanded="false" href="#collapseThree" data-parent="#accordion" data-toggle="collapse" role="button" class="collapsed">What is the modern Architectural concept for new Architect</a>
-												</h4>
-											</div>
-											<div aria-labelledby="headingThree" role="tabpanel" class="panel-collapse collapse" id="collapseThree" aria-expanded="false" style="height: 0px;">
-												<div class="panel-body">
-													<p>Architect agency perspiciatis unde omnis iste natus error sit volutatem accusantium doloremque antium, totam rem aperiam perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae Sed ut perspiciatis unde omnis iste natus error sit tatem.</p>
-												</div>
-											</div>
-										</div>
-									</div>					
-								</div>
-								<!-- Frequently Accordion -->
+								
+								{% include "_includes/common/faq_listing" with { faqList: entry.faqQanda.all() } only %}
+								
+								
 							</div>
-							<!-- Frequently Right Content -->
+							
 						</div>
 					</div>
 				</section>
+				{% endfor %}
+				{% endif %}

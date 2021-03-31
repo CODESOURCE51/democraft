@@ -1,0 +1,14 @@
+contentColumnType: string
+fieldGroup: 94b82a66-8211-4d39-bd36-b7dd89a8306f # FAQ Post Fields
+handle: faqQanda
+instructions: ''
+name: 'Faq qanda'
+searchable: false
+settings:
+  contentTable: '{{%matrixcontent_faqqanda}}'
+  maxBlocks: ''
+  minBlocks: ''
+  propagationMethod: all
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

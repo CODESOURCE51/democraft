@@ -1,0 +1,18 @@
+contentColumnType: text
+fieldGroup: 94b82a66-8211-4d39-bd36-b7dd89a8306f # FAQ Post Fields
+handle: faqTitle
+instructions: ''
+name: 'Faq Title'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: ''
+  columnType: null
+  initialRows: '1'
+  multiline: '1'
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText
