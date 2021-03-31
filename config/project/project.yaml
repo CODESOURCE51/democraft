@@ -1,0 +1,17 @@
+dateModified: 1617113016
+email:
+  fromEmail: sourav88.rp@gmail.com
+  fromName: democraft
+  transportType: craft\mail\transportadapters\Sendmail
+system:
+  edition: solo
+  live: true
+  name: democraft
+  schemaVersion: 3.6.7
+  timeZone: America/Los_Angeles
+users:
+  allowPublicRegistration: false
+  defaultGroup: null
+  photoSubpath: null
+  photoVolumeUid: null
+  requireEmailVerification: true

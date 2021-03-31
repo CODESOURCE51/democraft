@@ -1,0 +1,14 @@
+contentColumnType: string
+fieldGroup: d62d29d6-a132-432b-b9ad-6a3681f60e52 # How We Work Post Fields 
+handle: workFlow
+instructions: ''
+name: 'Work Flow'
+searchable: false
+settings:
+  contentTable: '{{%matrixcontent_workflow}}'
+  maxBlocks: ''
+  minBlocks: ''
+  propagationMethod: all
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

@@ -1,0 +1,14 @@
+contentColumnType: string
+fieldGroup: fb0647dd-3fbd-4e83-b860-5089c78a2738 # Service Post Fields
+handle: servicecontent
+instructions: ''
+name: Servicecontent
+searchable: false
+settings:
+  contentTable: '{{%matrixcontent_servicecontent}}'
+  maxBlocks: ''
+  minBlocks: ''
+  propagationMethod: all
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

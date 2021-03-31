@@ -1,0 +1,110 @@
+field: 491aace8-7038-4830-914b-9ebcf11fa9af # Work Flow
+fieldLayouts:
+  9e8f3d19-deb8-437f-90a9-5ea08af5e1d0:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 929dea03-fe21-4698-8538-2635b343cf6a # Work Phase Name
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: c9f507ab-be63-4b73-85f0-8cc53f69a2ca # Phase Icon
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 3702aede-3c51-465f-9d83-5e4db59b3bc9 # Phase Content
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  929dea03-fe21-4698-8538-2635b343cf6a: # Work Phase Name
+    contentColumnType: text
+    fieldGroup: null
+    handle: workPhaseName
+    instructions: ''
+    name: 'Work Phase Name'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '1'
+      multiline: '1'
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  3702aede-3c51-465f-9d83-5e4db59b3bc9: # Phase Content
+    contentColumnType: text
+    fieldGroup: null
+    handle: phaseContent
+    instructions: ''
+    name: 'Phase Content'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: '1'
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  c9f507ab-be63-4b73-85f0-8cc53f69a2ca: # Phase Icon
+    contentColumnType: string
+    fieldGroup: null
+    handle: phaseIcon
+    instructions: ''
+    name: 'Phase Icon'
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      allowUploads: true
+      allowedKinds:
+        - image
+      defaultUploadLocationSource: 'volume:9aad392b-59b1-40f7-a134-8ff50816c216' # General
+      defaultUploadLocationSubpath: ''
+      limit: ''
+      localizeRelations: false
+      previewMode: full
+      restrictFiles: '1'
+      selectionLabel: ''
+      showSiteMenu: false
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      singleUploadLocationSource: 'volume:66d4d2c3-31e8-4504-afdb-355b7727b865' # common
+      singleUploadLocationSubpath: ''
+      source: null
+      sources: '*'
+      targetSiteId: null
+      useSingleFolder: false
+      validateRelatedElements: false
+      viewMode: list
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+handle: workFlowContent
+name: 'Work Flow Content'
+sortOrder: 1

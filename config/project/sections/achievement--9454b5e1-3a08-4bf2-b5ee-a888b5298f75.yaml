@@ -1,0 +1,11 @@
+enableVersioning: true
+handle: achievement
+name: Achievement
+propagationMethod: all
+siteSettings:
+  950c6040-e386-4f1f-b60a-fec96f0dc055: # democraft
+    enabledByDefault: true
+    hasUrls: true
+    template: achievement/_entry
+    uriFormat: 'achievement/{slug}'
+type: channel

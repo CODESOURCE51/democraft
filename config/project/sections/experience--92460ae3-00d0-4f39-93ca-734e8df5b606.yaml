@@ -1,0 +1,11 @@
+enableVersioning: true
+handle: experience
+name: Experience
+propagationMethod: all
+siteSettings:
+  950c6040-e386-4f1f-b60a-fec96f0dc055: # democraft
+    enabledByDefault: true
+    hasUrls: true
+    template: experience/_entry
+    uriFormat: 'experience/{slug}'
+type: channel

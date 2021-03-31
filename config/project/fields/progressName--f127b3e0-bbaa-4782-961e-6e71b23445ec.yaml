@@ -1,0 +1,18 @@
+contentColumnType: text
+fieldGroup: 642c0eae-7ae5-4d07-8845-2d42517944a6 # Progress Post Fields
+handle: progressName
+instructions: ''
+name: 'Progress Name'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: ''
+  columnType: null
+  initialRows: '1'
+  multiline: '1'
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

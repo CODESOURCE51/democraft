@@ -1,0 +1,11 @@
+enableVersioning: true
+handle: howWeWork
+name: 'How We work'
+propagationMethod: all
+siteSettings:
+  950c6040-e386-4f1f-b60a-fec96f0dc055: # democraft
+    enabledByDefault: true
+    hasUrls: true
+    template: how-we-work/_entry
+    uriFormat: 'how-we-work/{slug}'
+type: channel

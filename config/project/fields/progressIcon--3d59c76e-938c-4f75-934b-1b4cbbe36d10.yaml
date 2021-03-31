@@ -1,0 +1,32 @@
+contentColumnType: string
+fieldGroup: 642c0eae-7ae5-4d07-8845-2d42517944a6 # Progress Post Fields
+handle: progressIcon
+instructions: ''
+name: 'Progress Icon'
+searchable: false
+settings:
+  allowSelfRelations: false
+  allowUploads: true
+  allowedKinds:
+    - image
+  defaultUploadLocationSource: 'volume:9aad392b-59b1-40f7-a134-8ff50816c216' # General
+  defaultUploadLocationSubpath: ''
+  limit: ''
+  localizeRelations: false
+  previewMode: full
+  restrictFiles: '1'
+  selectionLabel: ''
+  showSiteMenu: false
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: false
+  singleUploadLocationSource: 'volume:66d4d2c3-31e8-4504-afdb-355b7727b865' # common
+  singleUploadLocationSubpath: ''
+  source: null
+  sources: '*'
+  targetSiteId: null
+  useSingleFolder: false
+  validateRelatedElements: false
+  viewMode: list
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Assets

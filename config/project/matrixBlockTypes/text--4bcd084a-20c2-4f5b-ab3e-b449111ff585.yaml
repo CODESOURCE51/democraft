@@ -1,0 +1,110 @@
+field: 9e02352a-273e-4c38-a4b7-7110b86b4827 # Servicecontent
+fieldLayouts:
+  406d341a-b0e6-4a52-8563-abee76b8cd9b:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 8998229e-6cfb-4747-8c53-717af315e471 # Service Name
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 257415e2-377f-48e6-9442-89d3081d5942 # Service Image
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: af4394e9-dfa7-48d8-b628-942c662bf2a9 # Service Content
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  257415e2-377f-48e6-9442-89d3081d5942: # Service Image
+    contentColumnType: string
+    fieldGroup: null
+    handle: serviceImage
+    instructions: ''
+    name: 'Service Image'
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      allowUploads: true
+      allowedKinds:
+        - image
+      defaultUploadLocationSource: 'volume:9aad392b-59b1-40f7-a134-8ff50816c216' # General
+      defaultUploadLocationSubpath: ''
+      limit: ''
+      localizeRelations: false
+      previewMode: full
+      restrictFiles: '1'
+      selectionLabel: ''
+      showSiteMenu: false
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      singleUploadLocationSource: 'volume:66d4d2c3-31e8-4504-afdb-355b7727b865' # common
+      singleUploadLocationSubpath: ''
+      source: null
+      sources: '*'
+      targetSiteId: null
+      useSingleFolder: false
+      validateRelatedElements: false
+      viewMode: list
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+  8998229e-6cfb-4747-8c53-717af315e471: # Service Name
+    contentColumnType: text
+    fieldGroup: null
+    handle: serviceName
+    instructions: ''
+    name: 'Service Name'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '1'
+      multiline: '1'
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  af4394e9-dfa7-48d8-b628-942c662bf2a9: # Service Content
+    contentColumnType: text
+    fieldGroup: null
+    handle: serviceContent
+    instructions: ''
+    name: 'Service Content'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '3'
+      multiline: '1'
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: text
+name: Text
+sortOrder: 1

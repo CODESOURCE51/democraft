@@ -1,0 +1,18 @@
+contentColumnType: text
+fieldGroup: fb0647dd-3fbd-4e83-b860-5089c78a2738 # Service Post Fields
+handle: summery
+instructions: 'A small summery'
+name: Summery
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: ''
+  columnType: null
+  initialRows: '1'
+  multiline: '1'
+  placeholder: 'A small summery'
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

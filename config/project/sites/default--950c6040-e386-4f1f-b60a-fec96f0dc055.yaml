@@ -1,0 +1,8 @@
+baseUrl: $PRIMARY_SITE_URL
+handle: default
+hasUrls: true
+language: en-US
+name: democraft
+primary: true
+siteGroup: f51a8e45-7ed8-47b3-a0c7-8fab5a6f4e9a # democraft
+sortOrder: 1

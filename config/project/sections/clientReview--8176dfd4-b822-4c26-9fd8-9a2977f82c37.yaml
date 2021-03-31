@@ -1,0 +1,11 @@
+enableVersioning: true
+handle: clientReview
+name: 'Client Review'
+propagationMethod: all
+siteSettings:
+  950c6040-e386-4f1f-b60a-fec96f0dc055: # democraft
+    enabledByDefault: true
+    hasUrls: true
+    template: client-review/_entry
+    uriFormat: 'client-review/{slug}'
+type: channel
