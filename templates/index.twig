@@ -1,7 +1,7 @@
 {% extends "_layout" %}
 {% block slider %}
 
-  {% include "_includes/home_slider" %}
+  {% include "_includes/home/home_slider" %}
 
   
 {% endblock %}
@@ -12,6 +12,11 @@
 {% block content %}
 
   <div class="page-content">
+
+    {# Experience section starts #}
+      {% include "_includes/home/home_experience" %}
+    {# Experience section ends #}
+
   </div>
 
   
