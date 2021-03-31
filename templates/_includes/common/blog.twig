@@ -1,0 +1,6 @@
+{% set posts = craft.entries.section('blog').all() %}
+
+  {% include "_includes/common/blog_listing" with { posts: posts } only %}
+
+
+{#  #}

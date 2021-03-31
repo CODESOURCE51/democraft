@@ -1,0 +1,24 @@
+<div class="col-lg-offset-2 col-lg-10 col-md-12">
+								<div class="row">
+									
+                                    {% for services in service %}
+									<div class="col-md-4 col-sm-4">
+										<div class="specialization-single pb-35">
+											<div class="spcl-titel">
+                                            {% if services.serviceImage|length %}
+                                            {% set image = services.serviceImage.one() %}
+												<img src="{{ image.getUrl() }}" alt="{{ image.title }}" />
+                                            {% endif %}    
+												<h4>{{services.serviceName}}</h4>
+											</div>
+											<div class="spcl-text">
+												<p>{{services.serviceContent}}</p>
+											</div>
+										</div>
+                                       
+									</div>
+                                     {% endfor %}
+									
+									
+								</div>
+							</div>

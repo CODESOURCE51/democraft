@@ -1,0 +1,17 @@
+{% set service = craft.entries.section('services').limit(1).all() %}
+{% if service|length %}
+<section class="specialization-area bg-1 pt-70 pb-55" id="service">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-offset-2 col-md-10">
+								<div class="specialization-titel pb-55">
+									<h2>Our Specialization</h2>
+									<p>Raees the best Architect agency perspiciatis unde omnis iste natus error sit volutatem accusantium doloremque laudantium, totam rem aperiam</p>
+								</div>
+							</div>
+							
+							{% include "_includes/common/service_listing" with { service: entry.servicecontent.all() } only %}
+						</div>
+					</div>
+				</section>
+				{% endif %}
