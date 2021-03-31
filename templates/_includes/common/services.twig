@@ -1,12 +1,13 @@
-{% set service = craft.entries.section('services').limit(1).all() %}
+{% set service = craft.entries.section('services').all() %}
 {% if service|length %}
+{% for entry in service %}
 <section class="specialization-area bg-1 pt-70 pb-55" id="service">
 					<div class="container">
 						<div class="row">
 							<div class="col-md-offset-2 col-md-10">
 								<div class="specialization-titel pb-55">
-									<h2>Our Specialization</h2>
-									<p>Raees the best Architect agency perspiciatis unde omnis iste natus error sit volutatem accusantium doloremque laudantium, totam rem aperiam</p>
+									<h2>{{entry.title}}</h2>
+									<p>{{entry.summery}}</p>
 								</div>
 							</div>
 							
@@ -14,4 +15,5 @@
 						</div>
 					</div>
 				</section>
+				{% endfor %}
 				{% endif %}

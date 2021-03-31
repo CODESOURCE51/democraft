@@ -1,64 +1,29 @@
+{% set howweork = craft.entries.section('howWeWork').all() %}
+{% if howweork|length %}
+{% for serviceentry in howweork %}
+{% set workdtl = serviceentry.workFlow.all() %}
 <section class="working-area pb-130 pt-70">
 					<div class="container">
+					<h3>How we work</h3>
 						<!-- Single Working Way -->
+						{% for key, worksteps in workdtl %}
 						<div class="working-single">
 							<div class="working-titel">
-								<img src="assets/common/img/icon/w1.png" alt="">
-								<h4>Analyze</h4>
+								{% if worksteps.phaseIcon|length %}
+                                {% set image = worksteps.phaseIcon.one() %}
+								<img src="{{ image.getUrl() }}" alt="{{ image.title }}">
+								{% endif %} 
+								<h4>{{worksteps.workPhaseName}}</h4>
 							</div>
 							<div class="working-text">
-								<p>Raees the best Architect gency perspiciatis under omnis istetus error sit </p>
+								<p>{{worksteps.phaseContent}} </p>
 							</div>
-							<span class="numbering">01</span>
+							<span class="numbering">0{{key+1}}</span>
 						</div>
+						{% endfor %}
 						<!-- Single Working Way -->
-						<!-- Single Working Way -->
-						<div class="working-single">
-							<div class="working-titel">
-								<img src="assets/common/img/icon/w2.png" alt="">
-								<h4>Planning</h4>
-							</div>
-							<div class="working-text">
-								<p>Raees the best Architect gency perspiciatis under omnis istetus error sit </p>
-							</div>
-							<span class="numbering">02</span>
-						</div>
-						<!-- Single Working Way -->
-						<!-- Single Working Way -->
-						<div class="working-single">
-							<div class="working-titel">
-								<img src="assets/common/img/icon/w3.png" alt="">
-								<h4>Develop</h4>
-							</div>
-							<div class="working-text">
-								<p>Raees the best Architect gency perspiciatis under omnis istetus error sit </p>
-							</div>
-							<span class="numbering">03</span>
-						</div>
-						<!-- Single Working Way -->
-						<!-- Single Working Way -->
-						<div class="working-single">
-							<div class="working-titel">
-								<img src="assets/common/img/icon/w4.png" alt="">
-								<h4>Finishing</h4>
-							</div>
-							<div class="working-text">
-								<p>Raees the best Architect gency perspiciatis under omnis istetus error sit </p>
-							</div>
-							<span class="numbering">04</span>
-						</div>
-						<!-- Single Working Way -->
-						<!-- Single Working Way -->
-						<div class="working-single">
-							<div class="working-titel">
-								<img src="assets/common/img/icon/w5.png" alt="">
-								<h4>Support</h4>
-							</div>
-							<div class="working-text">
-								<p>Raees the best Architect gency perspiciatis under omnis istetus error sit </p>
-							</div>
-							<span class="numbering">05</span>
-						</div>
-						<!-- Single Working Way -->
+						
 					</div>
 				</section>
+				{% endfor %}
+				{% endif %}
