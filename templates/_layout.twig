@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>{{ sitename }}</title>
+        <title>{{ siteName }}</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 		{% block stylesheets %}
@@ -26,8 +26,14 @@
         <div class="page-wraper" id="main-home">
 			<!-- Header Area Start -->
 			<header>
+            <!--- For Nav Menu -->
+            {% include "_includes/nav" %}
+            <!-- Nav menu ends -->
             </header>
             <!-- Header Area End -->
+
+            {% block content %}
+            {% endblock %}
         </div>
 
 
