@@ -1,0 +1,18 @@
+{% extends "_layout" %}
+{% block slider %}
+  
+{% endblock %}
+
+{% block content %}
+{% include "_includes/singles/breadcrumb" %}
+
+<div class="page-content">
+    {# Services section starts #}
+      {% include "_includes/common/services" %}
+    {# Services section ends #}
+
+    {# Trending Company Start #}
+    {% include "_includes/home/trending_company" %}
+    {# Trending Company Ends #}
+</div>
+{% endblock %}
