@@ -13,6 +13,7 @@
 {{ csrfInput() }}
 <input type="hidden" name="action" value="contact-form/send">
     {{ redirectInput('contact/thanks') }}
+    <input type="hidden" name="toEmail" value="{{ 'mail.sourav51@gmail.com,checkme.samanta@gmail.com'|hash }}">
                                 <div class="row">
                                     <div class="all-contact-text">
                                         <div class="col-sm-6 col-xs-12">
@@ -44,7 +45,12 @@
                                                 <textarea name="message" class="form-control" required="" placeholder="Message">{{ message.message ?? '' }}</textarea>
                                             {{ message is defined and message ? errorList(message.getErrors('message')) }}
                                             </div>
-                                            <input id="secretHoneypotParamName" name="secretHoneypotParamName" type="text">
+                                            <div id="honeypotsome-div">
+If you see this, leave this form field blank 
+and invest in CSS support.
+<input type="text" id="secretHoneypotParamName" name="secretHoneypotParamName" value="" />
+</div>
+                                            
                                             <div class="submit">
                                                 <input class="submit" type="submit" value="Send">
                                             </div>
