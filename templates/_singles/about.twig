@@ -1,0 +1,34 @@
+{% extends "_layout" %}
+{% block slider %}
+  
+{% endblock %}
+
+{% block content %}
+{% include "_includes/singles/breadcrumb" %}
+
+<div class="page-content">
+    {# Experience section starts #}
+        {% include "_includes/home/home_experience" %}
+    {# Experience section ends #}
+
+    {# How we work Start #}
+        {% include "_includes/common/how_we_work" %}
+    {# How we work  Ends #}
+
+    {# Achievements Start #}
+    {% include "_includes/common/achievements" %}
+    {# Achievements Ends #}
+
+    {# Client Review Start #}
+    {% include "_includes/home/client_review" %}
+    {# Client Review Ends #}
+
+    {# FAQ Start #}
+        {% include "_includes/common/faq" %}
+        {# FAQ Ends #}
+
+        {# Trending Company Start #}
+        {% include "_includes/home/trending_company" %}
+        {# Trending Company Ends #}
+</div>
+{% endblock %}
