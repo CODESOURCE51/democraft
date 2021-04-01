@@ -1,3 +1,4 @@
+{% set firstSegment = craft.app.request.getSegment(1) %}
 <div class="header-area" id="sticky-header">
 					<nav  class="navbar">
 						<div class="container">
@@ -10,16 +11,16 @@
 											<span class="icon-bar"></span>
 											<span class="icon-bar"></span>
 										</button>
-										<a class="navbar-brand" href="index.html"><img src="../assets/common/img/icon/logo.png" alt="logo" class="img-responsive"></a>
+										<a class="navbar-brand" href="{{ siteUrl }}"><img src="../assets/common/img/icon/logo.png" alt="logo" class="img-responsive"></a>
 									</div>
 									<div class="collapse navbar-collapse" id="navigation">
 										<ul class="nav navbar-nav navbar-right">
-											<li class="active"><a href="index.html">home</a></li>
-											<li><a href="about-us.html">about Us</a></li>
-											<li><a href="services.html">service</a></li>
+											<li class="{{ firstSegment == '' ? 'active' }}"><a href="http://{{ siteUrl }}">home</a></li>
+											<li class="{{ firstSegment == 'about' ? 'active' }}"><a href="http://{{ url('about') }}">about Us</a></li>
+											<li class="{{ firstSegment == 'service' ? 'active' }}"><a href="http://{{ url('service') }}">service</a></li>
 											
-											<li><a href="blog.html">Blog</a></li>
-											<li><a href="contact-us.html">contact</a></li>
+											<li class="{{ firstSegment == 'blog' ? 'active' }}"><a href="http://{{ url('blog') }}">Blog</a></li>
+											<li class="{{ firstSegment == 'contact-us' ? 'active' }}"><a href="http://{{ url('contact-us') }}">contact</a></li>
 										</ul>
 									</div>
 								</div>
