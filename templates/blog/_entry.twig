@@ -1,7 +1,89 @@
 {% extends "_layout" %}
+{% block slider %}
+  
+{% endblock %}
 
 {% block content %}
-  <h1 class="text-4xl text-black font-display my-4">{{ entry.title }}</h1>
+<section class="breadcrumbs-area pt-200 pb-120 bg-2">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <div class="breadcrumbs">
+                                <h2 class="page-title">{{ entry.title }}</h2>
+                                <ul>
+                                    <li>
+                                        <a class="active" href="http://{{ siteUrl }}">Home</a>
+                                    </li>
+                                    <li>Blog</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-  <time class="text-sm block pb-4" datetime="{{ entry.postDate | date('Y-m-d') }}">{{ entry.postDate | date('d M Y') }}</time>
+<div class="page-content">
+        <section class="blog-area pt-130  pb-100 indicator-style" id="our-blog">
+					<div class="container">
+						<div class="row">
+						    <div class="col-md-12">
+						        <div class="blog-details-left">
+                                    <div class="blog-part">
+                                        <div class="blog-img">
+                                        {% if entry.featureImage|length %}
+                                        {% for image in entry.featureImage.all() %}
+                                            <img src="{{ image.url }}" alt="{{ image.title }}">
+                                        {% endfor %}
+                                         {% endif %}    
+                                        </div>
+                                        <div class="blog-info-2">
+                                            <div class="blog-meta">
+                                            {% if entry.postCategories|length %}
+                                            {% for category in entry.postCategories.all() %}
+                                                <span>
+                                                    <i class="fa fa-user"></i>
+                                                    {{- category.title -}}
+                                                </span>
+                                                {% endfor %}
+                                                {% endif %}
+                                                <span>
+                                                    <i class="fa fa-calendar" aria-hidden="true"></i>
+                                                   {{ entry.postDate | date('d M Y') }}
+                                                </span>
+                                                
+                                            </div>
+                                            <h3>{{ entry.title }}</h3>
+                                            {% include "_includes/common/post-blocks" with { blocks: entry.blogcontent.all() } only %}
+                                        </div>
+                                    </div>
+                                    
+                                    {# <div class="leave-comment">
+                                        <h3 class="leave-comment-text">Write a comment</h3>
+                                        <form action="#">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="leave-form">
+                                                        <input placeholder="Name*" type="text">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="leave-form">
+                                                        <input placeholder="Email*" type="text">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <div class="text-leave">
+                                                        <textarea placeholder="Comment*"></textarea>
+                                                        <button class="submit" type="submit">Send Commant</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div> #}
+                                </div>
+						    </div>
+						    
+					</div>
+				</section>
+</div>
 {% endblock %}
