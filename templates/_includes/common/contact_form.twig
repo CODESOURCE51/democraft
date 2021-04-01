@@ -1,0 +1,54 @@
+{% macro errorList(errors) %}
+    {% if errors %}
+        <ul class="errors">
+            {% for error in errors %}
+                <li>{{ error }}</li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+{% endmacro %}
+
+{% from _self import errorList %}
+<form id="contact-form" action="" method="post" accept-charset="UTF-8" class="col-md-8 col-xs-12">
+{{ csrfInput() }}
+<input type="hidden" name="action" value="contact-form/send">
+    {{ redirectInput('contact/thanks') }}
+                                <div class="row">
+                                    <div class="all-contact-text">
+                                        <div class="col-sm-6 col-xs-12">
+                                            <div class="main-contact">
+                                                <input  name="fromName" value="{{ message.fromName ?? '' }}" class="form-control" type="text" required="" placeholder="Name">
+                                                {{ message is defined and message ? errorList(message.getErrors('fromName')) }}
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6 col-xs-12">
+                                            <div class="main-contact">
+                                                <input name="fromEmail" value="{{ message.fromEmail ?? '' }}" class="form-control" type="email" required="" placeholder="Email">
+                                                {{ message is defined and message ? errorList(message.getErrors('fromEmail')) }}
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6 col-xs-12">
+                                            <div class="main-contact">
+                                                <input name="fromPhone" value="{{ message.fromPhone ?? '' }}" class="form-control" type="number" required="" placeholder="Tel">
+                                            {{ message is defined and message ? errorList(message.getErrors('fromPhone')) }}
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6 col-xs-12">
+                                            <div class="main-contact contact-mrgn">
+                                                <input name="subject" value="{{ message.subject ?? '' }}" class="form-control" type="text" required="" placeholder="Subject">
+                                            {{ message is defined and message ? errorList(message.getErrors('subject')) }}
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-12">
+                                            <div class="tnm-textarea">
+                                                <textarea name="message" class="form-control" required="" placeholder="Message">{{ message.message ?? '' }}</textarea>
+                                            {{ message is defined and message ? errorList(message.getErrors('message')) }}
+                                            </div>
+                                            <input id="secretHoneypotParamName" name="secretHoneypotParamName" type="text">
+                                            <div class="submit">
+                                                <input class="submit" type="submit" value="Send">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>

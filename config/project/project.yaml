@@ -1,9 +1,25 @@
-dateModified: 1617257982
+dateModified: 1617273220
 email:
   fromEmail: sourav88.rp@gmail.com
   fromName: democraft
   transportType: craft\mail\transportadapters\Sendmail
 plugins:
+  contact-form:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+    settings:
+      allowAttachments: ''
+      prependSender: 'On behalf of'
+      prependSubject: 'New message from democraft'
+      successFlashMessage: 'Your message has been sent.'
+      toEmail: mail.sourav51@gmail.com
+  contact-form-honeypot:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+    settings:
+      honeypotParam: secretHoneypotParamName
   redactor:
     edition: standard
     enabled: true
