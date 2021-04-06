@@ -1,0 +1,18 @@
+contentColumnType: text
+fieldGroup: ab7a340d-1d26-4d8b-acc0-548666d2519d # Common
+handle: twitterLink
+instructions: ''
+name: 'Twitter Link'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: ''
+  columnType: null
+  initialRows: '1'
+  multiline: '1'
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

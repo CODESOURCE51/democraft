@@ -52,11 +52,11 @@
 									<div class="footer-top-content">
 										<p>Raees the best Architect agency perspiciatis unde omnis iste natus error sit volutatem accusantium doloremque antium, totam rem aperiam perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudan</p>
 										<ul>
-											<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-											<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-											<li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
-											<li><a href="#"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a></li>
-											<li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+											<li><a href="{{siteControll.fbLink}}" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+											<li><a href="{{siteControll.twitterLink}}" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+											{# <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+											<li><a href="#"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a></li> #}
+											<li><a href="{{siteControll.instaLink}}" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
 										</ul>
 									</div>
 								</div>
@@ -73,15 +73,15 @@
 											<ul>
 												<li>
 													<img src="assets/common/img/icon/c1.png" alt="" />
-													<p>8901 Marmora Raod, <br> Glasgow, D04  89GR</p>
+													{{siteControll.address|markdown}}
 												</li>
 												<li>
 													<img src="assets/common/img/icon/c2.png" alt="" />
-													<p>Telephone : (801) 4256456  985634 Telephone : (801) 4256456  985634</p>
+													<p>Telephone : {{siteControll.phoneOne}} Telephone : {{siteControll.phoneTwo}}</p>
 												</li>
 												<li>
 													<img src="assets/common/img/icon/c3.png" alt="" />
-													<p>Email : info@raeesdevitemsllcdh.com Web : www.raeesdevitems.com</p>
+													<p>Email : {{siteControll.contactEmail}} Web : {{siteControll.websiteLink}}</p>
 												</li>
 											</ul>
 										</div>
@@ -89,7 +89,7 @@
 								</div>
 								<!-- Footer Single Box -->
 								<!-- Footer Single Box -->
-								<div class="col-md-2 col-md-offset-1 col-sm-3 col-xs-12 hidden-sm ">
+								{# <div class="col-md-2 col-md-offset-1 col-sm-3 col-xs-12 hidden-sm ">
 									<div class="fotter-single-area">
 										<h4>Our Services</h4>
 										<div class="footer-menu">
@@ -103,27 +103,26 @@
 											</ul>
 										</div>
 									</div>
-								</div>
+								</div> #}
 								<!-- Footer Single Box -->
 								<!-- Footer Single Box -->
-								<div class="col-md-2 col-md-offset-1 col-sm-4 col-xs-12 hidden-sm">
+								<div class="col-md-3 col-md-offset-1 col-sm-4 col-xs-12 hidden-sm">
 									<div class="fotter-single-area">
 										<h4>Site Link</h4>
 										<div class="footer-menu">
 											<ul>
-												<li><a href="#">Home</a></li>
-												<li><a href="#">About</a></li>
-												<li><a href="#">Services</a></li>
-												<li><a href="#">Team</a></li>
-												<li><a href="#">Projects</a></li>
-												<li><a href="#">Faq</a></li>
+												<li><a href="http://{{ siteUrl }}">Home</a></li>
+												<li><a href="http://{{ url('about') }}">About</a></li>
+												<li><a href="http://{{ url('service') }}">Services</a></li>
+												
+												<li><a href="http://{{ url('blog') }}">Blog</a></li>
 											</ul>
 										</div>
 									</div>
 								</div>
 								<!-- Footer Single Box -->
 								<!-- Footer Single Box -->
-								<div class="col-md-3 col-sm-6 col-xs-12">
+								<div class="col-md-4 col-sm-6 col-xs-12">
 									<div class="fotter-single-area">
 										<h4>Recent Post</h4>
 										<div class="post-area">

@@ -1,4 +1,4 @@
-dateModified: 1617281444
+dateModified: 1617646148
 email:
   fromEmail: sourav88.rp@gmail.com
   fromName: democraft
@@ -13,13 +13,27 @@ plugins:
       prependSender: 'On behalf of'
       prependSubject: 'New message from democraft'
       successFlashMessage: 'Your message has been sent.'
-      toEmail: mail.sourav51@gmail.com
-  contact-form-honeypot:
+      toEmail: checkme.samanta@gmail.com
+  contact-form-extensions:
     edition: standard
     enabled: true
-    schemaVersion: 1.0.0
+    schemaVersion: 1.0.1
     settings:
-      honeypotParam: secretHoneypotParamName
+      confirmationSubject: Test
+      confirmationTemplate: TESTING
+      enableConfirmationEmail: '1'
+      enableDatabase: '1'
+      enableTemplateOverwrite: '1'
+      notificationTemplate: ''
+      recaptcha: ''
+      recaptchaDataBadge: bottomright
+      recaptchaDebug: ''
+      recaptchaHideBadge: ''
+      recaptchaSecretKey: ''
+      recaptchaSiteKey: ''
+      recaptchaThreshold: '0.5'
+      recaptchaTimeout: '5'
+      recaptchaVersion: ''
   cookie-consent-banner:
     edition: standard
     enabled: true
@@ -56,10 +70,21 @@ plugins:
       secure_only: ''
       target: _blank
       type: opt-in
+  craft-recaptcha-3:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+    settings:
+      secretKey: 6LdJNZkaAAAAAChtMgncxWq2srnP19-hrKWnaxSw
+      siteKey: 6LdJNZkaAAAAAKswmUWdWzzEZSpgyhG4gaUlQoFq
   redactor:
     edition: standard
     enabled: true
     schemaVersion: 2.3.0
+  themes:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
 system:
   edition: solo
   live: true

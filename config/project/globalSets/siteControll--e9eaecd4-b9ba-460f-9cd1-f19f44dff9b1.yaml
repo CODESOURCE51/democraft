@@ -1,0 +1,99 @@
+fieldLayouts:
+  baf11f72-4385-4a39-8fc2-40e271435e0d:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 5f1cb626-dd3b-46ba-a19c-441cc5bd5562 # Post Title
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: eda6bb3f-061e-4576-af2d-9087d292d4b1 # Post Content
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: cc0cff3a-d434-4b32-b605-0c31c322b2a8 # Phone One
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 3c3f3bd3-ec26-43d6-804e-87471502bfa8 # Phone Two
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: f3e5d227-3941-4d6f-bca9-77011d48b772 # Contact Email
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: ddcc5c5f-5c12-48dc-a677-203cfebbe6ed # Address
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: d9ae38cb-a0df-4589-aa3b-24889bfab6d2 # Website Link
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: c6e3b902-9a6b-4fd7-bd12-9b5b2084e8ac # FB Link
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 2a06a2c4-414e-4d8b-820f-f6e29d237b98 # Insta Link
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 080d023b-84bc-470f-b4d2-e9d013718d01 # Twitter Link
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: 'Site Content'
+        sortOrder: 1
+handle: siteControll
+name: 'Site Controll'

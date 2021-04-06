@@ -1,0 +1,18 @@
+contentColumnType: text
+fieldGroup: ab7a340d-1d26-4d8b-acc0-548666d2519d # Common
+handle: contactEmail
+instructions: ''
+name: 'Contact Email'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: ''
+  columnType: null
+  initialRows: '4'
+  multiline: ''
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText
